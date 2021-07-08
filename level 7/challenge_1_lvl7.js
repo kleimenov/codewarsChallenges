@@ -1,5 +1,6 @@
 const sortArray = (text) => {
-    return text.slice().sort()
+    text = text.toLowerCase()
+    console.log([...text].sort())
 }
 
 console.log(sortArray('Hellloasggggbop'))
