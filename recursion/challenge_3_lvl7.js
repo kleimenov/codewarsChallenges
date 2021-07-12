@@ -10,5 +10,10 @@ You have to create the function fibonacci that receives n and returns f(n). You 
 */
 
 const fibbanachi = (number) => {
-    
+    return number > 2 ? fibbanachi(number - 1) + fibbanachi(number - 2) : 1;
 }
+
+   
+
+
+console.log(fibbanachi(10))
