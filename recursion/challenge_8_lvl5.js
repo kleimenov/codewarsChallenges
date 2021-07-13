@@ -11,7 +11,6 @@ let data = {
   const dummyFunc = (dict) => {
       
       for (let item in dict) {
-          console.log(item)
         //Object.keys(dict[item]) ? console.log(item) : dummyFunc(dict[item]);
         // if(Object.keys(item)){
         //    console.log('this is a key:', item)
