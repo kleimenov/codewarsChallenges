@@ -1,4 +1,4 @@
-
+//first solution
 const persistence = (num) => {
     let sum = num;
     let cnt = 0;
@@ -18,6 +18,7 @@ const persistence = (num) => {
     return cnt;
 }
 
+//second solution
 const persistence_1 = num => {
     return `${num}`.length > 1 ? 1 + persistence(`${num}`.split('').reduce((a, b) => a * +b)) : 0;
 }
