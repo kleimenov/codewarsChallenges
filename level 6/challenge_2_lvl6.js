@@ -14,12 +14,14 @@ const persistence = (num) => {
     if(num > 10){
         sumOfNumbers(sum)
     }
-       
-    // if(num.toString().split('').length > 1){
-    //     sumOfNumbers(sum)
-    // }
+   
     return cnt;
 }
 
+const persistence_1 = num => {
+    return `${num}`.length > 1 ? 1 + persistence(`${num}`.split('').reduce((a, b) => a * +b)) : 0;
+}
+
+console.log(persistence_1(999))
 console.log(persistence(999))
 
