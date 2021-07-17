@@ -10,11 +10,16 @@ const persistence = (num) => {
         sum = sum.reduce((a, b) => parseInt(a) * parseInt(b))
         return sum.toString().split('').length > 1 ? sumOfNumbers(sum) :  sum;
     }    
-       
-    if(num.toString().split('').length > 1){
+
+    if(num > 10){
         sumOfNumbers(sum)
     }
+       
+    // if(num.toString().split('').length > 1){
+    //     sumOfNumbers(sum)
+    // }
     return cnt;
 }
 
 console.log(persistence(999))
+
